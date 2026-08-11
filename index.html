@@ -33,10 +33,11 @@ header{position:sticky;top:0;background:rgba(20,23,28,.95);backdrop-filter:blur(
 .card h3{margin-bottom:8px}
 .card p{color:var(--muted);font-size:.94rem}
 .price{font-size:1.25rem;font-weight:800;color:var(--acc);margin-top:10px}
-.work .ph{height:150px;border-radius:8px;background:linear-gradient(135deg,#2a313c,#1a1f26);display:flex;align-items:center;justify-content:center;font-size:2.2rem;margin-bottom:14px}
+.work img{width:100%;height:170px;object-fit:cover;border-radius:8px;margin-bottom:14px}
+.work .ph{height:170px;border-radius:8px;background:linear-gradient(135deg,#2a313c,#1a1f26);display:flex;align-items:center;justify-content:center;font-size:2.2rem;margin-bottom:14px}
 .stars{color:var(--acc);letter-spacing:2px}
 .review{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
-.review .who{margin-top:12px;font-weight:700;color:var(--txt)}
+.review .who{margin-top:12px;font-weight:700}
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
 .step{border-left:2px solid var(--acc);padding-left:16px}
 .step b{display:block;margin-bottom:4px}
@@ -58,8 +59,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
   <nav>
     <a href="#services">Услуги</a><a href="#works">Работы</a><a href="#reviews">Отзывы</a><a href="#contact">Контакты</a>
   </nav>
-  <!-- TODO ПОСЛЕ СОГЛАСОВАНИЯ: телефон клиента -->
-  <a href="tel:+70000000000" style="color:var(--acc);text-decoration:none;font-weight:700">+7 (___) ___-__-__</a>
+  <a href="tel:+79179429538" style="color:var(--acc);text-decoration:none;font-weight:700">8 917 942-95-38</a>
 </div></header>
 
 <section class="hero"><div class="container">
@@ -85,14 +85,13 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 <section id="works" style="background:#181d24"><div class="container">
   <h2>Примеры работ и цены</h2><p class="sub">Реальные объекты, реальные сметы</p>
   <div class="grid work">
+    <div class="card"><img src="foto1.jpg" alt="Открытая веранда с перилами"><h3>Открытая веранда с перилами</h3><p>Каркас, обшивка, перила, ступени.</p><div class="price">85 000 ₽</div></div>
+    <div class="card"><img src="foto2.jpg" alt="Замена кровли"><h3>Замена кровли</h3><p>Профлист, конёк, крепёж. Под ключ.</p><div class="price">158 000 ₽</div></div>
+    <div class="card"><img src="foto3.jpg" alt="Веранда пристрой"><h3>Веранда к дому, каркас</h3><p>Пристрой к дому, обшивка, кровля.</p><div class="price">80 000 ₽</div></div>
+    <div class="card"><img src="foto4.jpg" alt="Каркас дома"><h3>Каркас дома</h3><p>Силовой каркас, стропильная система.</p><div class="price">190 000 ₽</div></div>
+    <div class="card"><img src="foto5.jpg" alt="Каркасный дом под кровлю"><h3>Дачный домик, строительство</h3><p>Каркас под кровлю, подготовка к отделке.</p><div class="price">120 000 ₽</div></div>
     <div class="card"><div class="ph">🛁</div><h3>Баня 6/4 под ключ</h3><p>Сруб, отделка, печь, коммуникации.</p><div class="price">470 000 ₽</div></div>
-    <div class="card"><div class="ph">🏠</div><h3>Капитальный ремонт дома</h3><p>Полная реконструкция с заменой инженерки.</p><div class="price">245 000 ₽</div></div>
-    <div class="card"><div class="ph"></div><h3>Перекрыть крышу гаража</h3><p>Демонтаж старого покрытия, новая кровля.</p><div class="price">260 000 ₽</div></div>
-    <div class="card"><div class="ph">🧱</div><h3>Хозблок под ключ</h3><p>Построили с нуля за 3 недели.</p><div class="price">190 000 ₽</div></div>
-    <div class="card"><div class="ph">🏡</div><h3>Замена кровли</h3><p>Полная замена покрытия с утеплением.</p><div class="price">158 000 ₽</div></div>
-    <div class="card"><div class="ph">🌲</div><h3>Дачный домик</h3><p>Строительство под ключ, отделка.</p><div class="price">120 000 ₽</div></div>
   </div>
-  <p style="color:var(--muted);font-size:.85rem;margin-top:14px"><!-- TODO ПОСЛЕ СОГЛАСОВАНИЯ: сюда вставить реальные фото объектов --></p>
 </div></section>
 
 <section><div class="container">
@@ -133,8 +132,11 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
     <label class="check"><input type="checkbox" required> Согласен на обработку персональных данных (152-ФЗ).</label>
     <button class="btn" type="submit">Отправить заявку →</button>
   </form>
-  <!-- TODO ПОСЛЕ СОГЛАСОВАНИЯ: wa.me / t.me клиента -->
-  <div class="mess"><a class="btn ghost" href="#">WhatsApp</a><a class="btn ghost" href="#">Telegram</a></div>
+  <!-- TODO: вставить MAX-ссылку Виктора, когда пришлёт -->
+  <div class="mess">
+    <a class="btn" href="tel:+79179429538">Позвонить: 8 917 942-95-38</a>
+    <a class="btn ghost" href="#" style="border-color:var(--acc);color:var(--acc)">Написать в MAX</a>
+  </div>
   <p class="geo">Ижевск · Удмуртская Республика · Нефтекамск · Чайковский · Вятские Поляны</p>
 </div></section>
 
