@@ -14,7 +14,7 @@ h1,h2,h3{line-height:1.2}
 section{padding:64px 0}
 h2{font-size:1.8rem;margin-bottom:10px}
 .sub{color:var(--muted);margin-bottom:32px}
-.btn{display:inline-block;padding:14px 26px;border-radius:10px;text-decoration:none;font-weight:700;background:var(--acc);color:#14171c;margin:6px 8px 0 0;border:0;cursor:pointer;transition:.2s}
+.btn{display:inline-block;padding:14px 26px;border-radius:10px;text-decoration:none;font-weight:700;background:var(--acc);color:#14171c;margin:6px 8px 0 0;border:0;cursor:pointer;transition:.2s;text-align:center}
 .btn:hover{filter:brightness(1.1)}
 .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
 header{position:sticky;top:0;background:rgba(20,23,28,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
@@ -46,10 +46,11 @@ form{display:grid;gap:12px;max-width:560px}
 input,textarea{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;color:var(--txt);font-family:inherit}
 input:focus,textarea:focus{outline:1px solid var(--acc)}
 .check{display:flex;gap:10px;color:var(--muted);font-size:.83rem;align-items:flex-start}
-.mess{margin-top:16px}
+.mess{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px}
+.mess .btn{margin:0;flex:1;min-width:200px}
 .geo{margin-top:20px;color:var(--muted)}
 footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.85rem;text-align:center}
-@media(max-width:640px){.hero h1{font-size:1.9rem}.nav a{margin-left:10px}}
+@media(max-width:640px){.hero h1{font-size:1.9rem}.nav a{margin-left:10px}.mess{flex-direction:column}.mess .btn{min-width:100%}}
 </style>
 </head>
 <body>
@@ -132,10 +133,9 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
     <label class="check"><input type="checkbox" required> Согласен на обработку персональных данных (152-ФЗ).</label>
     <button class="btn" type="submit">Отправить заявку →</button>
   </form>
-  <!-- TODO: вставить MAX-ссылку Виктора, когда пришлёт -->
   <div class="mess">
-    <a class="btn" href="tel:+79179429538">Позвонить: 8 917 942-95-38</a>
-    <a class="btn ghost" href="#" style="border-color:var(--acc);color:var(--acc)">Написать в MAX</a>
+    <a class="btn" href="https://max.ru/u/f9LHodD0cOJb4vOoIv8T67rndLhIw4rJoQtiyg7GLBr18sFQPTXKItIZwyQ" target="_blank">✉ Написать в MAX</a>
+    <a class="btn ghost" href="tel:+79179429538" style="border-color:var(--acc);color:var(--acc)">📞 8 917 942-95-38</a>
   </div>
   <p class="geo">Ижевск · Удмуртская Республика · Нефтекамск · Чайковский · Вятские Поляны</p>
 </div></section>
